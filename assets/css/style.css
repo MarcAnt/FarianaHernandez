@@ -1,0 +1,841 @@
+:root {
+    --colorPrincipal: #DE8F95; 
+}
+
+*{
+    font-family: 'Quicksand'!important; 
+    
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: var(--colorPrincipal);
+    overflow-x: hidden;
+}
+
+.colorPrincipal {
+    color: var(--colorPrincipal) !important;
+}
+
+.colorFondoPrincipal {
+    background-color: var(--colorPrincipal) !important;
+}
+
+.btn-up {
+
+    position: fixed;
+    z-index: 1000;  
+    bottom: 100px; 
+    right: 15px; 
+    width: 60px; 
+    height: 60px; 
+    border-radius: 50%; 
+    /* background-image: url(assets/download.png);   */
+   
+    background-color: white; 
+    border: 4px solid var(--colorPrincipal); 
+    transition: all .5s ease-in-out; 
+    
+}
+
+.btn-up:hover {
+    border: 5px solid white; 
+    background-color: var(--colorPrincipal); 
+    color: white !important;
+}
+
+    /* Estilos header */
+
+/* Set the border color */ 
+        
+.custom-toggler.navbar-toggler { 
+    border-color: var(--colorPrincipal); 
+} 
+/* Setting the stroke to green using rgb values (0, 128, 0) */ 
+
+.custom-toggler .navbar-toggler-icon { 
+    background-image: url( 
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(222, 143, 149, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+} 
+
+nav {
+    background-color: white;
+}
+nav ul li a {
+    font-weight: bold; 
+    color: var(--colorPrincipal) !important;
+}
+
+/* Estilos fondo header */
+.img-fondo {
+    width: 100vw;
+}
+.section-header span {
+    font-size: 2em;
+}
+
+.texto-centro {
+    background-color: white;
+    /* opacity: .6; */
+    width: 50vw;
+    /* height: 45vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid var(--colorPrincipal); */
+    /* padding: 1em; */
+    top: 5vh; 
+    left: 25vw; 
+    position: relative;
+}
+.texto-centro::before {
+    content: '';
+    position: absolute;
+    display: flex;
+    width: 52vw;
+    height: 120%;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--colorPrincipal);
+    padding: 1em;
+   
+    
+}
+
+.texto-centro h1{
+    color: var(--colorPrincipal);
+    text-align: center;
+    font-weight: bold;
+ 
+}
+
+
+/* Estilos info */
+.section-info {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+}
+.section-info p {
+    font-size: 2em;
+}
+
+
+.section-info .col-md-6:nth-child(2) img {
+    width: 50%;
+    
+}
+
+.triangulo { 
+    /* position: relative; */
+    width: 400px;
+    height: 300px;
+    background-color: var(--colorPrincipal);
+    box-shadow: 1px 1px 1px var(--colorPrincipal);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(10deg);
+}
+.triangulo-inner { 
+    /* position: absolute;
+    left: 15px;
+    top: 6px; */
+    width: 399px;
+    height: 299px;
+    background-color: white;
+    box-shadow: 1px 1px 1px var(--colorPrincipal);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    
+}
+
+.consultas {
+    width: 100vw;
+}
+
+/* Trabajos o galería */
+.img-galery{
+    margin-top: .5em;
+    margin-bottom: .5em;
+    width: 15em;
+    height: 15em;
+    cursor: pointer;
+}
+.trabajos {
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
+    background-color: white;
+
+}
+
+
+
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+   
+
+}
+
+/* 
+##Device = Laptops, Desktops
+##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    
+
+    
+
+}
+
+/* 
+##Device = Tablets, Ipads (portrait)
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .section-header span {
+        font-size: 2em;
+    }
+
+    .texto-centro {
+        background-color: white;
+        /* opacity: .6; */
+        width: 50vw;
+        /* height: 45vh; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid var(--colorPrincipal); */
+        /* padding: 1em; */
+        top: 5vh; 
+        left: 25vw; 
+        position: relative;
+    }
+    .texto-centro::before {
+        content: '';
+        position: absolute;
+        display: flex;
+        width: 52vw;
+        height: 120%;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid var(--colorPrincipal);
+        padding: 1em;
+       
+        
+    }
+    
+    .texto-centro h1{
+        color: var(--colorPrincipal);
+        text-align: center;
+        font-weight: bold;
+     
+    }
+    /* section-info */
+
+    .section-info .col-md-6:nth-child(1) p {
+        font-size: 2em;
+        margin: .5em;
+        left: 0;
+        top: 0;
+    }
+    .section-info .col-md-6:nth-child(2) {
+        display: none;
+    }
+
+    .section-info {
+        height: 70vh !important;
+    }
+
+    .triangulo { 
+
+        /* position: relative; */
+        width: 150px;
+        height: 100px;
+        
+    }
+
+    .triangulo-inner { 
+        /* position: absolute;
+        left: 15px;
+        top: 6px; */
+        width: 149px;
+        height: 99px;
+     
+    }
+
+
+    /* Consultas */
+    .consultas {
+        height: 130vh !important;
+    }
+
+    .consultas-container {
+       
+        flex-direction: column !important;
+    }
+
+    .horarios, .servicios {
+        font-size: .7em !important;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .horarios {
+        margin-top: 1.5em !important; 
+    }
+
+    .servicios {
+        margin: 0;
+    }
+
+    .horarios p, .servicios p {
+        font-size: 1.5em !important;
+    }
+
+    .horarios h2, .servicios h2 {
+        font-size: 1.8em !important;
+    }
+
+    .consultas h1:nth-child(1) {
+        margin-top: 1.8em;
+        margin-bottom: 1em;
+        font-size: 2em !important;
+    }
+
+    .consultas .numero {
+        padding: .5em !important;
+        font-size: 1.5em !important;
+        margin-bottom: 2em;
+        font-weight: bold;
+    }
+
+
+    /* Trabajos galería */
+
+   
+    
+    .trabajos h1 {
+        margin-top: 2em !important;
+        font-size: 2em;
+    }
+
+    .img-galery {
+        height: 15em;
+        width: 100%;
+    }
+
+    /* Footer */
+    footer {
+        height: 30vh;
+    }
+
+    footer span {
+        top: -2em !important;
+       
+        font-size: 2em !important;
+        
+    }
+
+    footer h3 {
+        margin-top: 3em;
+    }
+
+    footer p {
+        padding: 1em;
+    }
+
+
+}
+
+/* 
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .section-header span {
+        font-size: 2em;
+    }
+
+    .texto-centro {
+        /* background-color: white; */
+        /* opacity: .6; */
+        width: 50vw;
+        /* height: 45vh; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid white;
+        top: 5vh; 
+        left: 25vw; 
+    }
+    
+    .texto-centro h1{
+        color: var(--colorPrincipal);
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+
+    /* section-info */
+
+    .section-info .col-md-6:nth-child(1) p {
+        font-size: 2em;
+        margin: .5em;
+        left: 0;
+        top: 0;
+    }
+    .section-info .col-md-6:nth-child(2) {
+        display: none;
+    }
+
+    .section-info {
+        height: 70vh !important;
+    }
+
+    .triangulo { 
+
+        /* position: relative; */
+        width: 150px;
+        height: 100px;
+        
+    }
+
+    .triangulo-inner { 
+        /* position: absolute;
+        left: 15px;
+        top: 6px; */
+        width: 149px;
+        height: 99px;
+     
+    }
+
+
+    /* Consultas */
+    .consultas {
+        height: 130vh !important;
+    }
+
+    .consultas-container {
+       
+        flex-direction: column !important;
+    }
+
+    .horarios, .servicios {
+        font-size: .7em !important;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .horarios {
+        margin-top: 1.5em !important; 
+    }
+
+    .servicios {
+        margin: 0;
+    }
+
+    .horarios p, .servicios p {
+        font-size: 1.5em !important;
+    }
+
+    .horarios h2, .servicios h2 {
+        font-size: 1.8em !important;
+    }
+
+    .consultas h1:nth-child(1) {
+        margin-top: 1.8em;
+        margin-bottom: 1em;
+        font-size: 2em !important;
+    }
+
+    .consultas .numero {
+        padding: .5em !important;
+        font-size: 1.5em !important;
+        margin-bottom: 2em;
+        font-weight: bold;
+        margin-top: 1.5em;
+    }
+
+
+    /* Trabajos galería */
+
+   
+    
+    .trabajos h1 {
+        margin-top: 2em !important;
+        font-size: 2em;
+    }
+
+    .img-galery {
+        height: 15em;
+        width: 100%;
+    }
+
+    /* Footer */
+    footer {
+        height: 30vh;
+    }
+
+    footer span {
+        top: -2em !important;
+       
+        font-size: 2em !important;
+        
+    }
+
+    footer h3 {
+        margin-top: 3em;
+    }
+
+    footer p {
+        padding: 1em;
+    }
+
+
+}
+
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .section-header span {
+        font-size: 1em;
+    }
+
+    .texto-centro {
+        background-color: white;
+        /* opacity: .6; */
+        width: 50vw;
+        /* height: 45vh; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid var(--colorPrincipal); */
+        /* padding: 1em; */
+        top: 5vh; 
+        left: 25vw; 
+        position: relative;
+    }
+    .texto-centro::before {
+        content: '';
+        position: absolute;
+        display: flex;
+        width: 52vw;
+        height: 120%;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid var(--colorPrincipal);
+        padding: 1em;
+       
+        
+    }
+    
+    .texto-centro h1{
+        color: var(--colorPrincipal);
+        text-align: center;
+        font-weight: bold;
+        font-size: .5em;
+        margin: 0;
+        padding: 1em;
+     
+    }
+    /* section-info */
+
+    .section-info .col-md-6:nth-child(1) p {
+        font-size: 1.5em;
+        margin: 2em;
+        left: 0;
+        top: 0;
+    }
+    .section-info .col-md-6:nth-child(2) {
+        display: none !important;
+    }
+
+    .section-info {
+        height: 50vh !important;
+    }
+
+    .triangulo { 
+
+        /* position: relative; */
+        width: 150px;
+        height: 100px;
+        
+    }
+
+    .triangulo-inner { 
+        /* position: absolute;
+        left: 15px;
+        top: 6px; */
+        width: 149px;
+        height: 99px;
+     
+    }
+
+
+    /* Consultas */
+    .consultas {
+        height: 130vh !important;
+    }
+
+    .consultas-container {
+       
+        flex-direction: column !important;
+    }
+
+    .horarios, .servicios {
+        font-size: .7em !important;
+    }
+    .horarios, .servicios {
+        margin: 0;
+    }
+
+    .horarios p, .servicios p {
+        font-size: 1.2em !important;
+    }
+
+    .horarios h2, .servicios h2 {
+        font-size: 1.8em !important;
+    }
+
+    .consultas h1:nth-child(1) {
+        margin-top: 4em;
+        font-size: 1.5em !important;
+    }
+
+    .consultas .numero {
+        padding: .5em !important;
+        font-size: 1em !important;
+        margin-bottom: 2em;
+        font-weight: bold;
+    }
+
+
+    /* Trabajos galería */
+
+    .galery-content {
+        flex-direction: column !important;
+    }
+
+    .trabajos h1 {
+        margin-top: 5em !important;
+        font-size: 1.3em;
+    }
+
+    .img-galery {
+        width: 70%;
+        height: 25em;
+    }
+
+    /* Footer */
+    footer {
+        height: 30vh;
+    }
+
+    footer span {
+        top: -2em !important;
+        left: 2.5em !important;
+        font-size: 2em !important;
+        
+    }
+
+    footer h3 {
+        margin-top: 3em;
+    }
+
+    footer p {
+        padding: 1em;
+    }
+
+
+}
+
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .section-header span {
+        font-size: 1em;
+    }
+
+    .texto-centro {
+        background-color: white;
+        /* opacity: .6; */
+        width: 50vw;
+        /* height: 45vh; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid var(--colorPrincipal); */
+        /* padding: 1em; */
+        top: 5vh; 
+        left: 25vw; 
+        position: relative;
+    }
+    .texto-centro::before {
+        content: '';
+        position: absolute;
+        display: flex;
+        width: 52vw;
+        height: 120%;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid var(--colorPrincipal);
+        padding: 1em;
+       
+        
+    }
+    
+    .texto-centro h1{
+        color: var(--colorPrincipal);
+       
+        text-align: center;
+        font-weight: bold;
+        font-size: .5em;
+        margin: 0;
+        padding: 1em;
+    
+    }
+    /* section-info */
+
+    .section-info .col-md-6:nth-child(1) p {
+        font-size: 1.2em;
+        margin: 2em;
+        left: 0;
+        top: 0;
+    }
+    .section-info .col-md-6:nth-child(2) {
+        display: none !important;
+    }
+
+    .section-info {
+        height: 50vh !important;
+    }
+
+    .triangulo { 
+
+        /* position: relative; */
+        width: 150px;
+        height: 100px;
+        
+    }
+
+    .triangulo-inner { 
+        /* position: absolute;
+        left: 15px;
+        top: 6px; */
+        width: 149px;
+        height: 99px;
+     
+    }
+
+
+    /* Consultas */
+
+    .consultas {
+        height: 120vh !important;
+    }
+
+    .consultas-container {
+        flex-direction: column !important;
+    }
+
+    .horarios, .servicios {
+        font-size: .7em !important;
+    }
+    .horarios p, .servicios p {
+        font-size: 1.2em !important;
+    }
+
+    .horarios h2, .servicios h2 {
+        font-size: 1.8em !important;
+    }
+
+    .consultas h1:nth-child(1) {
+        margin-top: 2.5em;
+        font-size: 1.5em !important;
+    }
+
+    .consultas .numero {
+        padding: .5em !important;
+        font-size: .8em !important;
+        margin-bottom: 2em;
+        font-weight: bold;
+    }
+
+
+    /* Trabajos galería */
+
+    .galery-content {
+        flex-direction: column !important;
+    }
+
+    .trabajos h1 {
+        margin-top: 5em !important;
+        font-size: 1.3em;
+    }
+
+    .img-galery {
+        width: 80%;
+    }
+
+    /* Footer */
+    footer {
+        height: 20vh;
+    }
+
+    footer span {
+        top: -2em !important;
+        left: 2.5em !important;
+        font-size: 1em !important;
+        padding: .3em !important;
+    }
+
+    footer h3 {
+        margin-top: 2em;
+    }
+
+    footer p {
+        padding: 1em;
+    }
+
+
+}
