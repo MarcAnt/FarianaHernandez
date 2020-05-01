@@ -199,7 +199,7 @@ document.addEventListener('DOMContentLoaded', e => {
 
     setInterval( function () {
 
-        images[0].src = 'assets/img/img'+ Math.floor( (Math.random() * 3 ) + 1 )+'.jpeg'
+        images[0].src = 'assets/img/img'+ Math.floor( (Math.random() * 3 ) + 1 )+'.jpg'
         
         anime({
             targets:  `#${images[0].id}`,
@@ -207,8 +207,6 @@ document.addEventListener('DOMContentLoaded', e => {
             duration:500,
             easing: 'easeInOutSine'
         });
-
-        console.log(Math.floor( (Math.random() * 3 ) + 1 ));
         
 
     }, timeRandom())
@@ -218,7 +216,7 @@ document.addEventListener('DOMContentLoaded', e => {
     setInterval( function () {
 
     
-        images[1].src = 'assets/img/img'+ Math.floor( (Math.random() * 2 ) + 4 )+'.jpeg'
+        images[1].src = 'assets/img/img'+ Math.floor( (Math.random() * 2 ) + 4 )+'.jpg'
             
         anime({
             targets:  `#${images[1].id}`,
@@ -234,7 +232,7 @@ document.addEventListener('DOMContentLoaded', e => {
     setInterval( function () {
 
     
-        images[2].src = 'assets/img/img'+ Math.floor( (Math.random() *  4) + 6 )+'.jpeg'
+        images[2].src = 'assets/img/img'+ Math.floor( (Math.random() *  2) + 6 )+'.jpg'
             
         anime({
             targets:  `#${images[2].id}`,
@@ -249,7 +247,7 @@ document.addEventListener('DOMContentLoaded', e => {
     setInterval( function () {
 
     
-        images[3].src = 'assets/img/img'+ Math.floor( (Math.random() *  2) + 10 )+'.jpeg'
+        images[3].src = 'assets/img/img'+ Math.floor( (Math.random() *  2) + 8 )+'.jpg'
             
         anime({
             targets:  `#${images[3].id}`,
@@ -264,7 +262,7 @@ document.addEventListener('DOMContentLoaded', e => {
     setInterval( function () {
 
     
-        images[4].src = 'assets/img/img'+ Math.floor( (Math.random() *  3 ) + 12 )+'.jpeg'
+        images[4].src = 'assets/img/img'+ Math.floor( (Math.random() *  3 ) + 10 )+'.jpg'
             
         anime({
             targets:  `#${images[4].id}`,
