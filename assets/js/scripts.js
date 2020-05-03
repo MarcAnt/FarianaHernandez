@@ -130,9 +130,9 @@ document.addEventListener('DOMContentLoaded', e => {
     })
 
     //Fecha para el footer
-    const yearText = document.getElementById('year'); 
-    let fecha = new Date(); 
-    yearText.innerText = fecha.getFullYear()
+    // const yearText = document.getElementById('year'); 
+    // let fecha = new Date(); 
+    // yearText.innerText = fecha.getFullYear()
   
 
     
